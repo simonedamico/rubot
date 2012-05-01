@@ -11,7 +11,7 @@ bot = Cinch::Bot.new do
       
     }
     c.server = "irc.azzurra.org"
-    c.channels = ["#metwit"]
+    c.channels = ["#polimi"]
     c.delay_joins = 5
     
     c.nick = "rubot"
@@ -23,7 +23,7 @@ bot = Cinch::Bot.new do
   end
 
   on :message, /(js|javascript)/ do |m|
-    if m.user.nick == "geppetto123"
+    if m.user.nick == "gattuso"
       m.reply "Sento puzza di gattusata"
     end
     
