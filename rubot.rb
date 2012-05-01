@@ -22,7 +22,7 @@ bot = Cinch::Bot.new do
            
   end
 
-  on :message, /(js|javascript)/ do |m|
+  on :message, /(js|javascript|node)/i do |m|
     if m.user.nick == "gattuso"
       m.reply "Sento puzza di gattusata"
     end
